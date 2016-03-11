@@ -4,19 +4,22 @@ There are several golang scripts that leverage with OpenVPN.</p>
 
 <p>
 1. vpn_init initializes MySQL database. it creates all necessary tables and inserts information into them.</br>
+   ## Heading 2 ##
    usage : vpn_init db_host db_user db_password db_name auth_file</br>
-   Markup :  # example : ./vpn_init mysql.host.com admin password users.txt #</br>
+   ## Heading 2 ##
+   example : ./vpn_init mysql.host.com admin password users.txt </br>
    users.txt is a text file containing logins and passwords separated by :</br>
- Markup : #  
+ ## Heading 2 ##
    Example:</br>
 </br>
    user1:password1</br>
    user2.password2</br>
-   ...#</br>
+   ...</br>
    NOTE: your MySQL RDBMS should be reachable for vpn_init script with port 3306</br>
    </br>
 </br>
 2. auth - provides authentification for vpn users by password.</br>
+   ## Heading 2 ## 
    usage: put this string in OpenVPN configuration file:</br>
 
    auth-user-pass-verify "/etc/openvpn/auth/auth  db_host db_user db_password  db_name"  via-env</br>
